@@ -1,0 +1,661 @@
+postgres@072f2aabf676:/home/user/data$ java -jar openBIS-installer.jar
+Select target path [/home/postgres/openbis]
+1
+press 1 to continue, 2 to quit, 3 to redisplay
+1
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: refreshing dynamic variables
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: DATA_TMPEXTRACT
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable DATA_TMPEXTRACT: 1/data-tmp-extract
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_PATH
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_PATH: 1/servers/openBIS-server
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: ELN_MASTER_DATA_PANEL
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: skipped refreshing dynamic variable due to unmet condition isInstallELN+isElnMasterDataNotInstalled
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: skipped refreshing dynamic variable due to unmet condition !isInstallELN|!isElnMasterDataNotInstalled
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_TMPEXTRACT
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_TMPEXTRACT: 1/tmp-extract
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_TMPEXTRACT
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_TMPEXTRACT: 1/tmp-extract/openBIS-server
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_BIN_PATH
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_BIN_PATH: 1/bin
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_DSS_PATH
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_DSS_PATH: 1/servers/datastore_server
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: refreshing dynamic variables
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: DATA_TMPEXTRACT
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable DATA_TMPEXTRACT: 1/data-tmp-extract
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_PATH
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_PATH: 1/servers/openBIS-server
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: ELN_MASTER_DATA_PANEL
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: skipped refreshing dynamic variable due to unmet condition isInstallELN+isElnMasterDataNotInstalled
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable ELN_MASTER_DATA_PANEL: false
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_TMPEXTRACT
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_TMPEXTRACT: 1/tmp-extract
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_TMPEXTRACT
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_TMPEXTRACT: 1/tmp-extract/openBIS-server
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_BIN_PATH
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_BIN_PATH: 1/bin
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_DSS_PATH
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_DSS_PATH: 1/servers/datastore_server
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: refreshing dynamic variables
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: DATA_TMPEXTRACT
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable DATA_TMPEXTRACT: 1/data-tmp-extract
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_PATH
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_PATH: 1/servers/openBIS-server
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: ELN_MASTER_DATA_PANEL
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: skipped refreshing dynamic variable due to unmet condition isInstallELN+isElnMasterDataNotInstalled
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable ELN_MASTER_DATA_PANEL: false
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_TMPEXTRACT
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_TMPEXTRACT: 1/tmp-extract
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_TMPEXTRACT
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_TMPEXTRACT: 1/tmp-extract/openBIS-server
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_BIN_PATH
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_BIN_PATH: 1/bin
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_DSS_PATH
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_DSS_PATH: 1/servers/datastore_server
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: refreshing dynamic variables
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: DATA_TMPEXTRACT
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable DATA_TMPEXTRACT: 1/data-tmp-extract
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_PATH
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_PATH: 1/servers/openBIS-server
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: ELN_MASTER_DATA_PANEL
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: skipped refreshing dynamic variable due to unmet condition isInstallELN+isElnMasterDataNotInstalled
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable ELN_MASTER_DATA_PANEL: false
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_TMPEXTRACT
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_TMPEXTRACT: 1/tmp-extract
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_TMPEXTRACT
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_TMPEXTRACT: 1/tmp-extract/openBIS-server
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_BIN_PATH
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_BIN_PATH: 1/bin
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_DSS_PATH
+Apr 19, 2017 1:18:40 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_DSS_PATH: 1/servers/datastore_server
+Key Store
+If you have a new keystore for SSL, enter it here. Leave this field blank to use the existing keystore (or the default k
+eystore in a new installation).
+Key store []
+
+press 1 to continue, 2 to quit, 3 to redisplay
+1
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: refreshing dynamic variables
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: DATA_TMPEXTRACT
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable DATA_TMPEXTRACT: 1/data-tmp-extract
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_PATH
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_PATH: 1/servers/openBIS-server
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: ELN_MASTER_DATA_PANEL
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: skipped refreshing dynamic variable due to unmet condition isInstallELN+isElnMasterDataNotInstalled
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable ELN_MASTER_DATA_PANEL: false
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_TMPEXTRACT
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_TMPEXTRACT: 1/tmp-extract
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_TMPEXTRACT
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_TMPEXTRACT: 1/tmp-extract/openBIS-server
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_BIN_PATH
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_BIN_PATH: 1/bin
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_DSS_PATH
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_DSS_PATH: 1/servers/datastore_server
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: refreshing dynamic variables
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: DATA_TMPEXTRACT
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable DATA_TMPEXTRACT: 1/data-tmp-extract
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_PATH
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_PATH: 1/servers/openBIS-server
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: ELN_MASTER_DATA_PANEL
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: skipped refreshing dynamic variable due to unmet condition isInstallELN+isElnMasterDataNotInstalled
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable ELN_MASTER_DATA_PANEL: false
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_TMPEXTRACT
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_TMPEXTRACT: 1/tmp-extract
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_TMPEXTRACT
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_TMPEXTRACT: 1/tmp-extract/openBIS-server
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_BIN_PATH
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_BIN_PATH: 1/bin
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_DSS_PATH
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_DSS_PATH: 1/servers/datastore_server
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: refreshing dynamic variables
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: DATA_TMPEXTRACT
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable DATA_TMPEXTRACT: 1/data-tmp-extract
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_PATH
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_PATH: 1/servers/openBIS-server
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: ELN_MASTER_DATA_PANEL
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: skipped refreshing dynamic variable due to unmet condition isInstallELN+isElnMasterDataNotInstalled
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable ELN_MASTER_DATA_PANEL: false
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_TMPEXTRACT
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_TMPEXTRACT: 1/tmp-extract
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_TMPEXTRACT
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_TMPEXTRACT: 1/tmp-extract/openBIS-server
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_BIN_PATH
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_BIN_PATH: 1/bin
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_DSS_PATH
+Apr 19, 2017 1:18:57 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_DSS_PATH: 1/servers/datastore_server
+Technologies and Fast File Browsing
+Select any technology-specific modules that should installed along with openBIS. The selection can be altered at the nex
+t upgrade:
+  [ ] Proteomics
+input 1 to select, 0 to deselect:
+1
+  [ ] Screening
+input 1 to select, 0 to deselect:
+0
+  [ ] Illumina NGS (ETH BSSE Setup)
+input 1 to select, 0 to deselect:
+0
+  [ ] ELN/LIMS
+input 1 to select, 0 to deselect:
+1
+  [ ] Microscopy
+input 1 to select, 0 to deselect:
+0
+  [ ] Flow Cytometry
+input 1 to select, 0 to deselect:
+0
+
+Fast data set file browsing improves the performance of browsing of data sets with a large number of files. We recommend
+ leaving it on for all instances, and especially screening instances.
+  [ ] Fast data set file browsing
+input 1 to select, 0 to deselect:
+1
+press 1 to continue, 2 to quit, 3 to redisplay
+1
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: refreshing dynamic variables
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: DATA_TMPEXTRACT
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable DATA_TMPEXTRACT: 1/data-tmp-extract
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_PATH
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_PATH: 1/servers/openBIS-server
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: ELN_MASTER_DATA_PANEL
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable ELN_MASTER_DATA_PANEL: true
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: skipped refreshing dynamic variable due to unmet condition !isInstallELN|!isElnMasterDataNotInstalled
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_TMPEXTRACT
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_TMPEXTRACT: 1/tmp-extract
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_TMPEXTRACT
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_TMPEXTRACT: 1/tmp-extract/openBIS-server
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_BIN_PATH
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_BIN_PATH: 1/bin
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_DSS_PATH
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_DSS_PATH: 1/servers/datastore_server
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: refreshing dynamic variables
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: DATA_TMPEXTRACT
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable DATA_TMPEXTRACT: 1/data-tmp-extract
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_PATH
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_PATH: 1/servers/openBIS-server
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: ELN_MASTER_DATA_PANEL
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable ELN_MASTER_DATA_PANEL: true
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: skipped refreshing dynamic variable due to unmet condition !isInstallELN|!isElnMasterDataNotInstalled
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_TMPEXTRACT
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_TMPEXTRACT: 1/tmp-extract
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_TMPEXTRACT
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_TMPEXTRACT: 1/tmp-extract/openBIS-server
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_BIN_PATH
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_BIN_PATH: 1/bin
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_DSS_PATH
+Apr 19, 2017 1:19:47 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_DSS_PATH: 1/servers/datastore_server
+ELN/LIMS master data
+Install ELN/LIMS default entity types (PLASMID, YEAST, FLY, etc.)?
+0  [x] Yes
+1  [ ] No
+input selection:
+0
+press 1 to continue, 2 to quit, 3 to redisplay
+1
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: refreshing dynamic variables
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: DATA_TMPEXTRACT
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable DATA_TMPEXTRACT: 1/data-tmp-extract
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_PATH
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_PATH: 1/servers/openBIS-server
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: ELN_MASTER_DATA_PANEL
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable ELN_MASTER_DATA_PANEL: true
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: skipped refreshing dynamic variable due to unmet condition !isInstallELN|!isElnMasterDataNotInstalled
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_TMPEXTRACT
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_TMPEXTRACT: 1/tmp-extract
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_TMPEXTRACT
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_TMPEXTRACT: 1/tmp-extract/openBIS-server
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_BIN_PATH
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_BIN_PATH: 1/bin
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_DSS_PATH
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_DSS_PATH: 1/servers/datastore_server
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: refreshing dynamic variables
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: DATA_TMPEXTRACT
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable DATA_TMPEXTRACT: 1/data-tmp-extract
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_PATH
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_PATH: 1/servers/openBIS-server
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: ELN_MASTER_DATA_PANEL
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable ELN_MASTER_DATA_PANEL: true
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: skipped refreshing dynamic variable due to unmet condition !isInstallELN|!isElnMasterDataNotInstalled
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_TMPEXTRACT
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_TMPEXTRACT: 1/tmp-extract
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_TMPEXTRACT
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_TMPEXTRACT: 1/tmp-extract/openBIS-server
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_BIN_PATH
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_BIN_PATH: 1/bin
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_DSS_PATH
+Apr 19, 2017 1:20:00 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_DSS_PATH: 1/servers/datastore_server
+Misc
+Admin password []
+18dglass
+Admin password [18dglass]
+18dglass
+Password for the openBIS 'admin' user.
+
+
+Data folder [1/data]
+
+The directory to be used to store raw data like images, analysis files etc.
+
+
+0  [ ] Server (accessed from other machines)
+1  [x] Local (accessed from only from localhost)
+input selection:
+1
+press 1 to continue, 2 to quit, 3 to redisplay
+1
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: refreshing dynamic variables
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: DATA_TMPEXTRACT
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable DATA_TMPEXTRACT: 1/data-tmp-extract
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_PATH
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_PATH: 1/servers/openBIS-server
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: ELN_MASTER_DATA_PANEL
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable ELN_MASTER_DATA_PANEL: true
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: skipped refreshing dynamic variable due to unmet condition !isInstallELN|!isElnMasterDataNotInstalled
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_TMPEXTRACT
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_TMPEXTRACT: 1/tmp-extract
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_TMPEXTRACT
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_TMPEXTRACT: 1/tmp-extract/openBIS-server
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_BIN_PATH
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_BIN_PATH: 1/bin
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_DSS_PATH
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_DSS_PATH: 1/servers/datastore_server
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: refreshing dynamic variables
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: DATA_TMPEXTRACT
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable DATA_TMPEXTRACT: 1/data-tmp-extract
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_PATH
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_PATH: 1/servers/openBIS-server
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: ELN_MASTER_DATA_PANEL
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable ELN_MASTER_DATA_PANEL: true
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: skipped refreshing dynamic variable due to unmet condition !isInstallELN|!isElnMasterDataNotInstalled
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_TMPEXTRACT
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_TMPEXTRACT: 1/tmp-extract
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_TMPEXTRACT
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_TMPEXTRACT: 1/tmp-extract/openBIS-server
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_BIN_PATH
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_BIN_PATH: 1/bin
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_DSS_PATH
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_DSS_PATH: 1/servers/datastore_server
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: refreshing dynamic variables
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: DATA_TMPEXTRACT
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable DATA_TMPEXTRACT: 1/data-tmp-extract
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_PATH
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_PATH: 1/servers/openBIS-server
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: ELN_MASTER_DATA_PANEL
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable ELN_MASTER_DATA_PANEL: true
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: skipped refreshing dynamic variable due to unmet condition !isInstallELN|!isElnMasterDataNotInstalled
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_TMPEXTRACT
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_TMPEXTRACT: 1/tmp-extract
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_TMPEXTRACT
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_TMPEXTRACT: 1/tmp-extract/openBIS-server
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_BIN_PATH
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_BIN_PATH: 1/bin
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_DSS_PATH
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_DSS_PATH: 1/servers/datastore_server
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: refreshing dynamic variables
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: DATA_TMPEXTRACT
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable DATA_TMPEXTRACT: 1/data-tmp-extract
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_PATH
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_PATH: 1/servers/openBIS-server
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: ELN_MASTER_DATA_PANEL
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable ELN_MASTER_DATA_PANEL: true
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: skipped refreshing dynamic variable due to unmet condition !isInstallELN|!isElnMasterDataNotInstalled
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_TMPEXTRACT
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_TMPEXTRACT: 1/tmp-extract
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_TMPEXTRACT
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_TMPEXTRACT: 1/tmp-extract/openBIS-server
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_BIN_PATH
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_BIN_PATH: 1/bin
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_DSS_PATH
+Apr 19, 2017 1:20:50 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_DSS_PATH: 1/servers/datastore_server
+[ Starting to unpack ]
+[ Processing package: openBIS Server (1/3) ]
+[ Processing package: Datastore Server (2/3) ]
+[ Processing package: Administration Scripts (3/3) ]
+[ ERROR: Unzipping Jetty...
+
+1/tmp-extract/openBIS-server/install.sh: line 77: unzip: command not found
+ ]
+[ ERROR: The installation was not completed ]
+[ Unpacking finished ]
+Apr 19, 2017 1:21:43 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: refreshing dynamic variables
+Apr 19, 2017 1:21:43 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: DATA_TMPEXTRACT
+Apr 19, 2017 1:21:43 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable DATA_TMPEXTRACT: 1/data-tmp-extract
+Apr 19, 2017 1:21:43 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_PATH
+Apr 19, 2017 1:21:43 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_PATH: 1/servers/openBIS-server
+Apr 19, 2017 1:21:43 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: ELN_MASTER_DATA_PANEL
+Apr 19, 2017 1:21:43 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable ELN_MASTER_DATA_PANEL: true
+Apr 19, 2017 1:21:43 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: skipped refreshing dynamic variable due to unmet condition !isInstallELN|!isElnMasterDataNotInstalled
+Apr 19, 2017 1:21:43 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_TMPEXTRACT
+Apr 19, 2017 1:21:43 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_TMPEXTRACT: 1/tmp-extract
+Apr 19, 2017 1:21:43 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_OPENBIS_TMPEXTRACT
+Apr 19, 2017 1:21:43 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_OPENBIS_TMPEXTRACT: 1/tmp-extract/openBIS-server
+Apr 19, 2017 1:21:43 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_BIN_PATH
+Apr 19, 2017 1:21:43 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_BIN_PATH: 1/bin
+Apr 19, 2017 1:21:43 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: Dynamic variable: INSTALL_DSS_PATH
+Apr 19, 2017 1:21:43 PM com.izforge.izpack.installer.base.InstallerBase refreshDynamicVariables
+INFO: dynamic variable INSTALL_DSS_PATH: 1/servers/datastore_server
+cat: /home/user/data/1/bin/postgres_bin_path.txt: No such file or directory
+cat: /home/user/data/1/bin/postgres_bin_path.txt: No such file or directory
+Executing post installation script  /home/user/data/1/bin/post-install/0-create-initial-users.sh
+/home/user/data/1/bin/post-install/0-create-initial-users.sh: line 14: cd: /home/user/data/1/bin/post-install/../../serv
+ers/openBIS-server/jetty: No such file or directory
+Creating user admin ...
+/home/user/data/1/bin/post-install/0-create-initial-users.sh: line 17: ./bin/passwd.sh: No such file or directory
+/home/user/data/1/bin/post-install/0-create-initial-users.sh: line 14: cd: /home/user/data/1/bin/post-install/../../serv
+ers/openBIS-server/jetty: No such file or directory
+Creating user etlserver ...
+/home/user/data/1/bin/post-install/0-create-initial-users.sh: line 17: ./bin/passwd.sh: No such file or directory
+Executing post installation script  /home/user/data/1/bin/post-install/1-detect-32bit-jvm.sh
+touch: cannot touch ‘/home/user/data/1/bin/../servers/core-plugins/eln-lims/1/as/.eln-master-data-installed’: No such fi
+le or directory
+touch: cannot touch ‘/home/user/data/1/bin/../servers/core-plugins/eln-lims/2/as/.eln-master-data-installed’: No such fi
+le or directory
+Executing of command [/home/user/data/1/bin/disable-eln-master-data-script.sh] has failed. Aborting ...
+java.lang.RuntimeException: Executing of command [/home/user/data/1/bin/disable-eln-master-data-script.sh] has failed:
+Exit value: 1
+-------- Std out ---------
+
+-------- Err out ---------
+touch: cannot touch ‘/home/user/data/1/bin/../servers/core-plugins/eln-lims/1/as/.eln-master-data-installed’: No such fi
+le or directory
+touch: cannot touch ‘/home/user/data/1/bin/../servers/core-plugins/eln-lims/2/as/.eln-master-data-installed’: No such fi
+le or directory
+
+        at ch.systemsx.cisd.openbis.installer.izpack.AbstractScriptExecutor.executeAdminScript(AbstractScriptExecutor.ja
+va:90)
+        at ch.systemsx.cisd.openbis.installer.izpack.AbstractScriptExecutor.executeAdminScript(AbstractScriptExecutor.ja
+va:67)
+        at ch.systemsx.cisd.openbis.installer.izpack.ELNMasterDataAction.executeAction(ELNMasterDataAction.java:46)
+        at ch.systemsx.cisd.openbis.installer.izpack.AbstractScriptExecutor.executeAction(AbstractScriptExecutor.java:44
+)
+        at com.izforge.izpack.installer.console.ConsoleInstaller.executeAction(ConsoleInstaller.java:499)
+        at com.izforge.izpack.installer.console.ConsoleInstaller.executeActions(ConsoleInstaller.java:467)
+        at com.izforge.izpack.installer.console.ConsoleInstaller.validatePanel(ConsoleInstaller.java:452)
+        at com.izforge.izpack.installer.console.ConsoleInstaller.iterateAndPerformAction(ConsoleInstaller.java:185)
+        at com.izforge.izpack.installer.console.ConsoleInstaller.doInstall(ConsoleInstaller.java:275)
+        at com.izforge.izpack.installer.console.ConsoleInstaller.run(ConsoleInstaller.java:569)
+        at com.izforge.izpack.installer.bootstrap.Installer.launchInstall(Installer.java:186)
+        at com.izforge.izpack.installer.bootstrap.Installer.start(Installer.java:149)
+        at com.izforge.izpack.installer.bootstrap.Installer.main(Installer.java:62)
+java.lang.RuntimeException: Executing of command [/home/user/data/1/bin/disable-eln-master-data-script.sh] has failed:
+Exit value: 1
+-------- Std out ---------
+
+-------- Err out ---------
+touch: cannot touch ‘/home/user/data/1/bin/../servers/core-plugins/eln-lims/1/as/.eln-master-data-installed’: No such fi
+le or directory
+touch: cannot touch ‘/home/user/data/1/bin/../servers/core-plugins/eln-lims/2/as/.eln-master-data-installed’: No such fi
+le or directory
+
+        at ch.systemsx.cisd.openbis.installer.izpack.AbstractScriptExecutor.executeAdminScript(AbstractScriptExecutor.ja
+va:90)
+        at ch.systemsx.cisd.openbis.installer.izpack.AbstractScriptExecutor.executeAdminScript(AbstractScriptExecutor.ja
+va:67)
+        at ch.systemsx.cisd.openbis.installer.izpack.ELNMasterDataAction.executeAction(ELNMasterDataAction.java:46)
+        at ch.systemsx.cisd.openbis.installer.izpack.AbstractScriptExecutor.executeAction(AbstractScriptExecutor.java:44
+)
+        at com.izforge.izpack.installer.console.ConsoleInstaller.executeAction(ConsoleInstaller.java:499)
+        at com.izforge.izpack.installer.console.ConsoleInstaller.executeActions(ConsoleInstaller.java:467)
+        at com.izforge.izpack.installer.console.ConsoleInstaller.validatePanel(ConsoleInstaller.java:452)
+        at com.izforge.izpack.installer.console.ConsoleInstaller.iterateAndPerformAction(ConsoleInstaller.java:185)
+        at com.izforge.izpack.installer.console.ConsoleInstaller.doInstall(ConsoleInstaller.java:275)
+        at com.izforge.izpack.installer.console.ConsoleInstaller.run(ConsoleInstaller.java:569)
+        at com.izforge.izpack.installer.bootstrap.Installer.launchInstall(Installer.java:186)
+        at com.izforge.izpack.installer.bootstrap.Installer.start(Installer.java:149)
+        at com.izforge.izpack.installer.bootstrap.Installer.main(Installer.java:62)
+Error executing action 'ch.systemsx.cisd.openbis.installer.izpack.ELNMasterDataAction' : null
+postgres@072f2aabf676:/home/user/data$
