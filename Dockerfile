@@ -27,8 +27,8 @@ RUN apt-get update \
 ENV OPENBIS_VERSION 16.05.3-r37798
 
 # download and extract openBIS
-RUN mkdir -p /home/user \
-    && cd /home/user \
+RUN mkdir -p /home/openbis \
+    && cd /home/openbis \
     && curl -u ${OPENBIS_USERNAME}:${OPENBIS_PASSWORD} -O https://wiki-bsse.ethz.ch/download/attachments/96536755/openBIS-installation-standard-technologies-${OPENBIS_VERSION}.tar.gz \
     && tar -xzvf openBIS-installation-standard-technologies-${OPENBIS_VERSION}.tar.gz \
     && rm openBIS-installation-standard-technologies-${OPENBIS_VERSION}.tar.gz \
@@ -38,23 +38,24 @@ RUN mkdir -p /home/user \
 #wget --user={OPENBIS_USERNAME} --password='${OPENBIS_PASSWORD}' --content-disposition -O openBIS.tar.gz https://wiki-bsse.ethz.ch/download/attachments/96536755/openBIS-installation-standard-technologies-${OPENBIS_VERSION}.tar.gz
 
 # non-GUI installation of openBIS
-COPY ./settings/console.properties /home/user/openBIS-installation-standard-technologies-${OPENBIS_VERSION}/
-RUN /home/user/openBIS-installation-standard-technologies-${OPENBIS_VERSION}/run-console.sh
+COPY ./settings/console.properties /home/openBIS-installation-standard-technologies-${OPENBIS_VERSION}/
+RUN /home/openBIS-installation-standard-technologies-${OPENBIS_VERSION}/run-console.sh
 
-# customize service.properties of openBIS
+# # customize service.properties of openBIS
+# COPY ./settings/service.properties /home/openbis/servers/openBIS-server/jetty/etc/
 
 # Cleanup
 RUN apt-get clean
 
-create a python user
-ENV HOME /home/user
-RUN useradd --create-home --home-dir $HOME user \
+# create an openbis user
+ENV HOME /home/openbis
+RUN useradd --create-home --home-dir $HOME openbis \
    && chmod -R u+rwx $HOME \
-   && chown -R user:user $HOME
+   && chown -R openbis:openbis $HOME
 
 # switch back to user
 WORKDIR $HOME
-USER user
+USER openbis
 
 # set the command
 #CMD ["python3"]
