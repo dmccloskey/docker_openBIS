@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  openbis:
+    image: dmccloskey/openbis:latest
+    # environment:
+    #   - POSTGRES_PASSWORD=postgres
+    #   - POSTGRES_USER=postgres
+    #   - PGDATA=/home/user/posgresql/data 
+    #   - POSTGRES_DB=postgres
+    networks:
+      - openbis_network
+    volumes:
+      - //C/Users//domccl/GitHub/docker_openBIS/settings/:/home/user/settings/
+    # command: postgres
+
+networks:
+  openbis_network:
+    ipam:
+      config:
+        - subnet: 172.23.0.0/16
