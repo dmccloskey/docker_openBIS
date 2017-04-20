@@ -1,6 +1,19 @@
 version: "3"
 
 services:
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+#      - PGDATA=/home/user/posgresql/data 
+      - POSTGRES_DB=postgres
+    networks:
+      - openbis_network
+    volumes:
+      - //C/Users//domccl/GitHub/docker_postgres/settings/:/home/user/settings/
+    ports:
+      - "8000:8000"
   openbis:
     image: dmccloskey/openbis:latest
     # environment:
