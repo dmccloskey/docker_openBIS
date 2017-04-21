@@ -1,4 +1,6 @@
 # vim:set ft=dockerfile:
+## postgres < 9.6 breaks the build process
+# FROM postgres:9.5
 FROM postgres:9.6
 
 ENV OPENBIS_REPO https://wiki-bsse.ethz.ch/download/attachments/11109400/
@@ -10,15 +12,19 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
 ## User creation
 RUN groupadd -r openbis --gid=1000 && useradd -r -g openbis --uid=1000 openbis && \
-	mkdir -p /home/openbis && chown -R openbis /home/openbis
+	mkdir -p /home/openbis && chown -R openbis /home/openbis 
+	# \
+	# # add permissions to postgres
+	# && chown -R postgres /home/openbis
 ## Template for openBIS state on the same directory (used by the startup script)
 COPY openbis_state_template.zip /home/openbis/
 ## Entrypoint - Just a patched version of the postgres image entry point adding the openBIS startup
-COPY docker-entrypoint.sh /
+# COPY docker-entrypoint.sh /
+COPY docker-entrypoint.sh /usr/local/bin/
 EXPOSE 443
 
-	## Java Installation
-	# auto validate license
+## Java Installation
+# auto validate license
 RUN echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections && \
 	# update repos
 	echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee /etc/apt/sources.list.d/webupd8team-java.list && \
