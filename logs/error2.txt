@@ -1,0 +1,97 @@
+PS C:\Users\domccl\GitHub\docker_openMS> docker run --name=openbis --rm -v //C/Users//domccl/GitHub/docker_openBIS/openb
+is_state:/home/openbis/openbis_state --hostname bs-mbpr28 -p 443:443 openbis/debian-openbis:16.05.2
+Creating new openbis_state
+Archive:  /home/openbis/openbis_state_template.zip
+   creating: /home/openbis/openbis_state/as_logs/
+   creating: /home/openbis/openbis_state/dss_logs/
+   creating: /home/openbis/openbis_state/dss_registration_logs/
+   creating: /home/openbis/openbis_state/dss_session_workspace/
+   creating: /home/openbis/openbis_state/dss_store/
+   creating: /home/openbis/openbis_state/dss_store/dropboxes/
+  inflating: /home/openbis/openbis_state/dss_store/dropboxes/simple-dropbox.py
+   creating: /home/openbis/openbis_state/dss_store/incoming-default/
+   creating: /home/openbis/openbis_state/dss_store/incoming-simple/
+   creating: /home/openbis/openbis_state/dss_store/log/
+   creating: /home/openbis/openbis_state/dss_store/post-registration/
+   creating: /home/openbis/openbis_state/dss_store/post-registration/cleanup-tasks/
+   creating: /home/openbis/openbis_state/dss_store/samples/
+   creating: /home/openbis/openbis_state/dss_store/store/
+   creating: /home/openbis/openbis_state/dss_store/store/1/
+   creating: /home/openbis/openbis_state/dss_store/store/1/pre-commit/
+   creating: /home/openbis/openbis_state/dss_store/store/1/pre-staging/
+   creating: /home/openbis/openbis_state/dss_store/store/1/recovery-marker/
+   creating: /home/openbis/openbis_state/dss_store/store/1/recovery-marker/default-dropbox/
+   creating: /home/openbis/openbis_state/dss_store/store/1/staging/
+   creating: /home/openbis/openbis_state/postgresql_data/
+The files belonging to this database system will be owned by user "postgres".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "en_US.utf8".
+The default database encoding has accordingly been set to "UTF8".
+The default text search configuration will be set to "english".
+
+Data page checksums are disabled.
+
+fixing permissions on existing directory /home/openbis/openbis_state/postgresql_data ... ok
+creating subdirectories ... ok
+selecting default max_connections ... 100
+selecting default shared_buffers ... 128MB
+selecting dynamic shared memory implementation ... posix
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/base/1": Invalid argu
+ment
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/base/12406": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/base/12407": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/base": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/global": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/pg_clog": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/pg_commit_ts": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/pg_dynshmem": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/pg_logical/mappings": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/pg_logical/snapshots": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/pg_logical": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/pg_multixact/members": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/pg_multixact/offsets": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/pg_multixact": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/pg_notify": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/pg_replslot": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/pg_serial": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/pg_snapshots": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/pg_stat": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/pg_stat_tmp": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/pg_subtrans": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/pg_tblspc": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/pg_twophase": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/pg_xlog/archive_status": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/pg_xlog": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data": Invalid argument
+initdb: could not fsync file "/home/openbis/openbis_state/postgresql_data/pg_tblspc": Invalid argument
+
+WARNING: enabling "trust" authentication for local connections
+You can change this by editing pg_hba.conf or using the option -A, or
+--auth-local and --auth-host, the next time you run initdb.
+ok
+
+Success. You can now start the database server using:
+
+    pg_ctl -D /home/openbis/openbis_state/postgresql_data -l logfile start
+
+****************************************************
+WARNING: No password has been set for the database.
+         This will allow anyone with access to the
+         Postgres port to access your database. In
+         Docker's default configuration, this is
+         effectively any other container on the same
+         system.
+
+         Use "-e POSTGRES_PASSWORD=password" to set
+         it in "docker run".
+****************************************************
+waiting for server to start....FATAL:  data directory "/home/openbis/openbis_state/postgresql_data" has wrong ownership
+HINT:  The server must be started by the user that owns the data directory.
+ stopped waiting
+pg_ctl: could not start server
+Examine the log output.
+PS C:\Users\domccl\GitHub\docker_openMS>
