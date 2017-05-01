@@ -19,8 +19,9 @@ RUN groupadd -r openbis --gid=1000 && useradd -r -g openbis --uid=1000 openbis &
 ## Template for openBIS state on the same directory (used by the startup script)
 COPY openbis_state_template.zip /home/openbis/
 ## Entrypoint - Just a patched version of the postgres image entry point adding the openBIS startup
-# COPY docker-entrypoint.sh /
-COPY docker-entrypoint.sh /usr/local/bin/
+COPY docker-entrypoint.sh /
+## Testing permission fix for Win10
+# COPY docker-entrypoint.sh /usr/local/bin/
 EXPOSE 443
 
 ## Java Installation
