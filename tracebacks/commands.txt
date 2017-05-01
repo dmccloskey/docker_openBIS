@@ -1,0 +1,26 @@
+/home/openbis/openbis/servers/core-plugins
+
+
+Linux:
+# Start the image
+docker run --rm --name=openbis -v /home/systemsbiochemistry/Documents/openbis_state:/home/openbis/openbis_state --hostname systemsbiochemistry -p 443:443 openbis/debian-openbis:16.05.2
+#navigate to https://systemsbiochemistry/openbis
+
+# Stop the container
+docker ps
+docker exec -it <container_id> bash
+# Stop the services
+gosu openbis /home/openbis/openbis/bin/alldown.sh
+gosu postgres pg_ctl -D /home/openbis/openbis_state/postgresql_data -m fast -w stop
+# Exit the container and kill it
+exit
+docker kill <container_id>
+
+# Restart openbis
+docker ps
+docker exec -it <container_id> bash
+# Stop the services
+gosu openbis /home/openbis/openbis/bin/alldown.sh
+# Start the services
+gosu openbis /home/openbis/openbis/bin/allup.sh
+
