@@ -81,7 +81,7 @@ RUN echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true 
 ## Template for openBIS state on the same directory (used by the startup script)
 COPY openbis_state_template.zip /home/openbis/
 ## Entrypoint - Just a patched version of the postgres image entry point adding the openBIS startup
-# COPY docker-entrypoint.sh /
+COPY docker-entrypoint.sh /
 ## Testing permission fix for Win10
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 EXPOSE 443
