@@ -1,5 +1,7 @@
 /home/openbis/openbis/servers/core-plugins
 
+/home/openbis/openbis/servers/openBIS-server/jetty/bin/register-master-data.sh -s https:://systembiochemistry/openbis/openbis -f /home/openbis/openbis_state/master-data-script.py
+
 
 Linux:
 # Start the image

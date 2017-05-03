@@ -1,0 +1,18 @@
+log4j:WARN No appenders could be found for logger (org.springframework.aop.framework.JdkDynamicAopProxy).
+log4j:WARN Please initialize the log4j system properly.
+Importing Master Data...
+Imported 12 File Formats
+Imported 43 Vocabularies
+Imported 4 Scripts
+Imported 49 Experiment Types
+Imported 45 Sample Types
+Imported 72 Data Set Types
+Imported 1 Material Types
+Imported 121 Property Types
+Imported 582 Property Assignments
+Imported 0 External DMSs
+Import of Master Data finished.
+ERROR: Failed to commit all transactions for script /home/openbis/openbis_state/master-data.py
+ERROR: Failed to register type 'HLA_Typing': SyntaxError: ('no viable alternative at character \'"\'', ('<string>', 6, 28, '        lines = value.split("\n'))
+ERROR: Failed to register type 'Immune_Response_Handler': SyntaxError: ('no viable alternative at character \'"\'', ('<string>', 6, 28, '        lines = value.split("\n'))
+

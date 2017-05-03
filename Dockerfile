@@ -88,3 +88,11 @@ RUN echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true 
 COPY http.ini /home/openbis/openbis/servers/openBIS-server/jetty/start.d/
 # openBIS config for apache
 COPY openbis.conf /etc/apache2/conf-available/openbis.conf
+
+# QBIC custom installation
+RUN mkdir -p /home/openbis/openbis/servers/core-plugins/QBIC/1/as
+COPY master-data.py /home/openbis/openbis/servers/core-plugins/QBIC/1/as/initialize-master-data.py
+RUN mkdir -p /home/openbis/openbis/servers/core-plugins/QBIC/1/dss && \
+	curl -o /home/openbis/openbis/servers/core-plugins/QBIC/1/dss/etl-scripts.zip https://github.com/qbicsoftware/etl-scripts/archive/master.zip && \
+	tar -xvzf /home/openbis/openbis/servers/core-plugins/QBIC/1/dss/etl-scripts.zip -C /home/openbis/openbis/servers/core-plugins/QBIC/1/dss/ && \
+	rm /home/openbis/openbis/servers/core-plugins/QBIC/1/dss/etl-scripts.zip && \
