@@ -18,11 +18,6 @@ else
 	ln -s /home/openbis/openbis_state/dss_logs /home/openbis/openbis/servers/datastore_server/log
 fi
 
-if [ -d "/home/openbis/openbis/servers/core-plugins/QBIC/1/dss" ]; then
-	echo "Enabling QBIC module"
-        exec gosu openbis sed -i '$ a\, QBIC' /home/openbis/openbis/servers/core-plugins/core-plugins.properties
-fi
-
 export PGDATA=/home/openbis/openbis_state/postgresql_data
 
 # usage: file_env VAR [DEFAULT]
