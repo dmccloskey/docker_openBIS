@@ -1,0 +1,1 @@
+Failed: 2017-05-04 13:55:02,495 ERROR [main] OPERATION.CorePluginTable - Failed to commit all transactions in the master data registration script for plugin 'Core Plugin[name='QBIC', version='1']'.

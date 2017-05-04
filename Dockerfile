@@ -82,21 +82,12 @@ RUN echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true 
 COPY openbis_state_template.zip /home/openbis/
 
 ## Entrypoint - Just a patched version of the postgres image entry point adding the openBIS startup
-COPY docker-entrypoint.sh /
+# COPY docker-entrypoint.sh /
 
 ## Testing permission fix for Win10
-#RUN rm /docker-entrypoint.sh
-#COPY docker-entrypoint.sh /usr/local/bin/
-
-## Test failed 1: "cannot execute exec" or "permission denied" or "not found in $PATH"
-## ENV PATH /docker-entrypoint.sh:$PATH
-
-## Test failed 2: "cannot execute exec" or "permission denied" or "not found in $PATH"
-## RUN ln -s /usr/local/bin/docker-entrypoint.sh /
-
-## Test failed 3: "cannot execute exec" or "permission denied" or "not found in $PATH"
-#RUN chown postgres /usr/local/bin/docker-entrypoint.sh
-#ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+RUN rm /docker-entrypoint.sh && rm /usr/local/bin/docker-entrypoint.sh
+COPY docker-entrypoint.sh /usr/local/bin/
+RUN ln -s /usr/local/bin/docker-entrypoint.sh / && chmod +x /usr/local/bin/docker-entrypoint.sh
 
 EXPOSE 443
 
@@ -108,10 +99,10 @@ COPY openbis.conf /etc/apache2/conf-available/openbis.conf
 # QBIC custom installation
 RUN mkdir -p /home/openbis/openbis/servers/core-plugins/QBIC/1/as
 COPY master-data.py /home/openbis/openbis/servers/core-plugins/QBIC/1/as/initialize-master-data.py
-RUN mkdir -p /home/openbis/openbis/servers/core-plugins/QBIC/1/dss && \
-	apt-get install -y --no-install-recommends git && \
-	git clone https://github.com/qbicsoftware/etl-scripts.git /home/openbis/openbis/servers/core-plugins/QBIC/1/dss && \
-	sed -i '$ a\, QBIC' /home/openbis/openbis/servers/core-plugins/core-plugins.properties
+RUN mkdir -p /home/openbis/openbis/servers/core-plugins/QBIC/1/dss \
+	&& apt-get install -y --no-install-recommends git \
+	&& git clone https://github.com/qbicsoftware/etl-scripts.git /home/openbis/openbis/servers/core-plugins/QBIC/1/dss \
+	&& echo 'enabled-modules = dropbox-monitor, dataset-uploader, dataset-file-search, eln-lims, QBIC' > /home/openbis/openbis/servers/core-plugins/core-plugins.properties
 	#curl -o /home/openbis/openbis/servers/core-plugins/QBIC/1/dss/etl-scripts.zip https://github.com/qbicsoftware/etl-scripts/archive/master.zip && \
 	#apt-get install unzip && \
 	#unzip /home/openbis/openbis/servers/core-plugins/QBIC/1/dss/etl-scripts.zip -d /home/openbis/openbis/servers/core-plugins/QBIC/1/dss/ && \
