@@ -148,20 +148,4 @@ if [ "$1" = 'postgres' ]; then
 	sleep infinity
 fi
 
-#QBIC customizations
-#if [ -f "/home/openbis/openbis_state/master-data-script.py" ]; then
-#	echo "Adding QBIC master-data"
-#        exec gosu openbis /home/openbis/openbis/servers/openBIS-server/jetty/bin/register-master-data.sh -s https:://systembiochemistry/openbis/openbis -f /home/openbis/openbis_state/master-data-script.py
-#fi
-#if [ -d "/home/openbis/openbis_state/etl-scripts" ]; then
-#	echo "Enabling QBIC module"
-#        exec gosu openbis ln /home/openbis/openbis_state/etl-scripts /home/openbis/openbis/servers/core-plugins/QBIC/1/dss
-#fi
-
-## Stop the services
-#gosu openbis /home/openbis/openbis/bin/alldown.sh
-## Start the services
-#gosu openbis /home/openbis/openbis/bin/allup.sh
-
-
 exec "$@"
