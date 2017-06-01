@@ -6,7 +6,8 @@
 Linux:
 # Start the image
 docker run --rm --name=openbis -v /home/systemsbiochemistry/Documents/openbis_state:/home/openbis/openbis_state --hostname systemsbiochemistry -p 443:443 openbis/debian-openbis:16.05.2
-docker run --rm --name=openbis -v /home/systemsbiochemistry/Documents/openbis_state:/home/openbis/openbis_state --hostname systemsbiochemistry -p 443:443 dmccloskey/docker_openbis
+docker run --rm --name=openbis -v /home/systemsbiochemistry/Documents/openbis_state:/home/openbis/openbis_state --hostname systemsbiochemistry -p 443:443 dmccloskey/docker-openbis
+docker run --rm --name=openbis -v //C/Users/domccl/"Dropbox (UCSD SBRG)"/Project_AnalyticsLIMS/openbis_state:/home/openbis/openbis_state --hostname local -p 443:443 dmccloskey/docker-openbis
 #navigate to https://systemsbiochemistry/openbis
 
 # Stop the container
